@@ -55,7 +55,7 @@ $ISVC="sklearn-model-inference-ivanazhnov"; kubectl -n r-mlops-k8s-9-1-3-3544644
 kubectl -n r-mlops-k8s-9-1-3-35446443 port-forward pod/$POD_NAME 8080:8080
 ```
 
-### Пример запроса
+### Пример запроса Windows PowerShell
 ```powershell
 Invoke-RestMethod `
   -Uri "http://127.0.0.1:8080/v2/models/my_onnx_model/infer" `
