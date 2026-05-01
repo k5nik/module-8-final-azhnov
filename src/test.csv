@@ -1,0 +1,2 @@
+,key,fare_amount,pickup_datetime,pickup_longitude,pickup_latitude,dropoff_longitude,dropoff_latitude,passenger_count
+24238194,2015-05-07 19:52:06.0000003,7.5,2015-05-07 19:52:06 UTC,-73.99981689453125,40.73835372924805,-73.99951171875,40.72321701049805,1

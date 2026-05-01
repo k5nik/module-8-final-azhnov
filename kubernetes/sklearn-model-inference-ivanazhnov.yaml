@@ -1,0 +1,18 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService # Тип сервиса
+metadata:
+  name: sklearn-model-inference-ivanazhnov # Название сервиса для inference
+  namespace: r-mlops-k8s-9-1-3-35446443
+spec:
+  predictor:
+    serviceAccountName: s3-sa-ivanazhnov
+    model:
+      modelFormat:
+        name: onnx
+      protocolVersion: v2
+      runtime: kserve-tritonserver
+      storageUri: "s3://r-mlops-bucket-9-1-3-35446443/model_dir/"   #для Triton модель должна лежать в /model_dir/[model_name]/[version]/model.onnx
+      resources:
+        requests:
+          cpu: "100m"
+          memory: "512Mi"
