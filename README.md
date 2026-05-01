@@ -28,7 +28,7 @@ uv run train_and_save_model.py
 Модель будет сохранена в src/service/artifacts/model.onnx
 ```bash
 cd src/service/
-uv run train_and_save_model.py
+uv run convert_to_onnx.py
 ```
 
 ### 4) Базовый тест производительности
