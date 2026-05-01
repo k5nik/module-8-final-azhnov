@@ -21,7 +21,7 @@ uv pip install -r requirements.txt --python .venv
 Модель будет сохранена в src/service/artifacts/model.pkl
 ```bash
 cd <path_to_project>/src/service/
-uv train_and_save_model.py
+uv run train_and_save_model.py
 ```
 
 ### 3) Конвертация модели
@@ -35,7 +35,7 @@ uv run train_and_save_model.py
 Результаты будут сохранены в src/service/artifacts/profile_onnx_IvanAzhnov.json
 ```bash
 cd src/service/
-uv onnx_benchmark.py
+uv run onnx_benchmark.py
 ```
 
 ### 5) Копируем в s3
