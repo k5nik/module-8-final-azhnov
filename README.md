@@ -25,7 +25,7 @@ uv run train_and_save_model.py
 ```
 
 ### 3) Конвертация модели
-Модель будет сохранена в src/service/artifacts/onnx.pkl
+Модель будет сохранена в src/service/artifacts/model.onnx
 ```bash
 cd src/service/
 uv run train_and_save_model.py
